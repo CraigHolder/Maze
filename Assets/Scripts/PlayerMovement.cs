@@ -6,11 +6,12 @@ public class PlayerMovement : MonoBehaviour
 {
     public GameObject obj_player;
     public CharacterController c_control;
+    public Vector3 vec3_checkpoint;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        vec3_checkpoint = new Vector3(48, 1, -48);
     }
 
     // Update is called once per frame
@@ -33,14 +34,6 @@ public class PlayerMovement : MonoBehaviour
             c_control.Move(new Vector3(-10 * Time.deltaTime, 0, 0));
         }
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            c_control.Move(new Vector3(0, 10 * Time.deltaTime, 0));
-        }
-
-        if(c_control.isGrounded == false)
-        {
-            c_control.Move(new Vector3(0, -1 * Time.deltaTime, 0));
-        }
+        c_control.Move(new Vector3(0, -2 * Time.deltaTime, 0));
     }
 }

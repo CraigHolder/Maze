@@ -8,11 +8,12 @@ public class MovingWall : MonoBehaviour
     public float f_speed;
     public float f_dist;
     float f_currdist;
+    CharacterController c_control;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        c_control = this.GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -20,7 +21,7 @@ public class MovingWall : MonoBehaviour
     {
         if(b_leftright == true)
         {
-            transform.position = transform.position + new Vector3(f_speed * Time.deltaTime, 0, 0);
+            c_control.Move(new Vector3(f_speed * Time.deltaTime, 0, 0));
             f_currdist += Mathf.Abs(f_speed * Time.deltaTime);
             if (f_currdist >= f_dist)
             {
@@ -30,7 +31,7 @@ public class MovingWall : MonoBehaviour
         }
         else
         {
-            transform.position = transform.position + new Vector3(0, 0, f_speed * Time.deltaTime);
+            c_control.Move(new Vector3(0, 0, f_speed * Time.deltaTime));
             f_currdist += Mathf.Abs(f_speed * Time.deltaTime);
             if (f_currdist >= f_dist)
             {
