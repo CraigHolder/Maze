@@ -1,0 +1,5 @@
+﻿  TimeLogger.cpp
+C:\Users\Craig\Documents\GitHub\PluginV2\PluginV2\TimeLogger.cpp(33,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Wrapper.cpp
+  Generating Code...
+  PluginV2.vcxproj -> C:\Users\Craig\Documents\GitHub\PluginV2\x64\Debug\PluginV2.dll
