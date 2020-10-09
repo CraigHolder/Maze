@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Checkpoint : MonoBehaviour
@@ -11,6 +12,7 @@ public class Checkpoint : MonoBehaviour
     public PluginController s_plugin;
     bool b_activated = false;
     public Text t_timer;
+    public bool b_finish = false;
 
     void Start()
     {
@@ -28,6 +30,11 @@ public class Checkpoint : MonoBehaviour
             s_plugin.SaveTime(checkpointTime);
             t_timer.text = s_plugin.LoadTime(i_checkpointID).ToString();
             b_activated = true;
+            if (b_finish == true)
+            {
+                SceneManager.LoadScene("EndScene");
+            }
+
         }
     }
 }

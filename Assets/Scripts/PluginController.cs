@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 
 public class PluginController : MonoBehaviour
 {
+    public static PluginController s_TheObj;
     const string DLL_NAME = "PluginV2";
 
     [DllImport(DLL_NAME)]
@@ -53,6 +54,15 @@ public class PluginController : MonoBehaviour
     void Start()
     {
         lastTime = Time.time;
+        if(!s_TheObj)
+        {
+            s_TheObj = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public float lastTime = 0.0f;

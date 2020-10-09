@@ -778,6 +778,7 @@ MonoBehaviour:
   s_playerscript: {fileID: 333644676}
   s_plugin: {fileID: 1072060392}
   t_timer: {fileID: 1420737964}
+  b_finish: 0
 --- !u!64 &64715492
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1591,6 +1592,7 @@ MonoBehaviour:
   s_playerscript: {fileID: 333644676}
   s_plugin: {fileID: 1072060392}
   t_timer: {fileID: 1420737964}
+  b_finish: 0
 --- !u!64 &204052956
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1894,6 +1896,7 @@ MonoBehaviour:
   s_playerscript: {fileID: 333644676}
   s_plugin: {fileID: 1072060392}
   t_timer: {fileID: 1420737964}
+  b_finish: 0
 --- !u!64 &234548139
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6387,6 +6390,7 @@ MonoBehaviour:
   s_playerscript: {fileID: 333644676}
   s_plugin: {fileID: 1072060392}
   t_timer: {fileID: 1420737964}
+  b_finish: 1
 --- !u!64 &922942919
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7720,7 +7724,7 @@ GameObject:
   - component: {fileID: 1072060392}
   m_Layer: 0
   m_Name: PluginController
-  m_TagString: Untagged
+  m_TagString: PluginController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12072,6 +12076,7 @@ MonoBehaviour:
   s_playerscript: {fileID: 333644676}
   s_plugin: {fileID: 1072060392}
   t_timer: {fileID: 1420737964}
+  b_finish: 0
 --- !u!64 &1809225522
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12566,6 +12571,7 @@ MonoBehaviour:
   s_playerscript: {fileID: 333644676}
   s_plugin: {fileID: 1072060392}
   t_timer: {fileID: 1420737964}
+  b_finish: 0
 --- !u!64 &1949093779
 MeshCollider:
   m_ObjectHideFlags: 0
