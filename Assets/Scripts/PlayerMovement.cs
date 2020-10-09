@@ -35,6 +35,6 @@ public class PlayerMovement : MonoBehaviour
             c_control.Move(new Vector3(-10 * Time.deltaTime, 0, 0));
         }
 
-        c_control.Move(new Vector3(0, -2 * Time.deltaTime, 0));
+        c_control.Move(new Vector3(0, -4 * Time.deltaTime, 0));
     }
 }
